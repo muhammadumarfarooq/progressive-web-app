@@ -10,4 +10,5 @@ self.addEventListener("activate", function (event) {
 // fetch event listner (fetch whenever our webapp fetch something)
 self.addEventListener("fetch", function (event) {
   console.log("fetching", event);
+  event.respondWith(fetch(event.request));
 });
