@@ -3,6 +3,6 @@ self.addEventListener("install", function (event) {
 });
 
 self.addEventListener("activate", function (event) {
-  console.log("activate sw", event);
+  console.log("activate s", event);
   return self.clients.claim();
 });
