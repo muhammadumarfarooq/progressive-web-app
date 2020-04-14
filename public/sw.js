@@ -6,3 +6,8 @@ self.addEventListener("activate", function (event) {
   console.log("activate s", event);
   return self.clients.claim();
 });
+
+// fetch event listner (fetch whenever our webapp fetch something)
+self.addEventListener("fetch", function (event) {
+  console.log("fetching", event);
+});
